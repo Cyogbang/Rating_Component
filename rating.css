@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-    background: hsl(216, 12%, 8%);
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
@@ -40,12 +39,22 @@ body {
     font-size: 15px;
 }
 
+.form_labels {
+    position: absolute;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    color: hsl(216, 12%, 54%);
+}
+
 .selector {
     padding: 0rem;
     width: 3.8rem;
     height: 3rem;
     margin-top: 1.5rem;
+    position: relative;
 }
+
+
 
 .submit_button {
     width: 100%;
