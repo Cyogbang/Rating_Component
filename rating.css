@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+    background: hsl(216, 12%, 8%);
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
@@ -22,7 +23,7 @@ body {
 }
 
 #star_icon {
-    background: hsl(216, 12%, 54%);
+    background: hsl(217, 6%, 26%);
     padding: 0.8rem;
     border-radius: 2rem;
 }
@@ -39,12 +40,12 @@ body {
     font-size: 15px;
 }
 
-.form_labels {
+/* .form_labels {
     position: absolute;
     margin-left: 1.5rem;
     margin-top: 0.5rem;
     color: hsl(216, 12%, 54%);
-}
+} */
 
 .selector {
     padding: 0rem;
@@ -64,10 +65,17 @@ body {
     border-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    border: hsl(0, 0%, 100%);
 }
 
 .selector_checker {
-    background: hsl(216, 12%, 54%);
+    background: hsl(217, 6%, 26%);
     border-radius: 1rem;
     color: hsl(25, 97%, 53%);
     width: 12rem;
@@ -76,14 +84,48 @@ body {
 }
 
 /* .rating_box {
-    display: none;
+    display: block;
 } */
 
 .response_box {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 3rem;
-    /* display: none; */
+    display: none;
+}
+
+.BTN_container {
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.BTN_container button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 4rem;
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+    align-content: center;
+    box-shadow: none;
+    align-items: center;
+    cursor: pointer;
+    background-color: hsl(217, 6%, 26%);
+    color:hsl(216, 12%, 54%);
+    transition-duration: 0.4s;
+}
+
+.BTN_container button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.BTN_container button:active {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
 }
 
 @media screen and (max-width: 375px) {

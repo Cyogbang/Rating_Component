@@ -13,27 +13,36 @@
             <h2 class="box_headings">How did we do?</h2>
             <p class="box_text_body">Please let us know how we did with your support request. All feedback is appreciated 
             to help us improve our offering!</p>
-            <form>
+            <div class="BTN_container">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+            </div>
+            <!-- <form>
                 <label for="one" class="form_labels">1</label>
-                <input type="radio" name="one" class="selector">
+                <input type="button" name="one" class="selector" id="oneStar">
                 <label for="Two" class="form_labels">2</label>
-                <input type="radio" name="Two" class="selector">
+                <input type="radio" name="Two" class="selector" id="twoStar">
                 <label for="Three" class="form_labels">3</label>
-                <input type="radio" name="Three" class="selector">
+                <input type="radio" name="Three" class="selector" id="threeStar">
                 <label for="Four" class="form_labels">4</label>
-                <input type="radio" name="Four" class="selector">
+                <input type="radio" name="Four" class="selector" id="fourStar">
                 <label for="Five" class="form_labels">5</label>
-                <input type="radio" name="Five" class="selector">
-            </form>
-            <button class="submit_button">SUBMIT</button>
+                <input type="radio" name="Five" class="selector" id="fiveStar">
+            </form> -->
+            <button class="submit_button" onclick="submitResponse()">SUBMIT</button>
         </div>
         <div class="response_box boxex">
             <img src="./images/illustration-thank-you.svg" alt="icon" style="margin-bottom: 0.7rem;">
-            <p class="selector_checker">You selected<span></span> out of 5</p>
+            <p class="selector_checker">You selected<span id="star_rated"></span> out of 5</p>
             <h2 class="box_headings">Thank you!</h2>
             <p class="box_text_body">We appreciate you taking the time to give a rating. If you ever need more support, 
             don’t hesitate to get in touch!</p>
         </div>
     </div>
+
+    <script src="./rating.js"></script>
 </body>
 </html>
