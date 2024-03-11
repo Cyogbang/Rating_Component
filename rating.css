@@ -83,9 +83,9 @@ body {
     margin: auto;
 }
 
-/* .rating_box {
+.rating_box {
     display: block;
-} */
+}
 
 .response_box {
     text-align: center;
@@ -123,10 +123,10 @@ body {
     color: hsl(0, 0%, 100%);
 }
 
-.BTN_container button:active {
-    background-color: hsl(217, 12%, 63%);
+/* .BTN_container button:active {
+    background-color: hsl(216, 12%, 54%);
     color: hsl(0, 0%, 100%);
-}
+} */
 
 @media screen and (max-width: 375px) {
     body {
@@ -139,5 +139,11 @@ body {
 
     .selector {
         width: 3.2rem;
+    }
+
+    .BTN_container button {
+        width: 2rem;
+        height: 1.5rem;
+        border-radius: 100%;
     }
 }
